@@ -6,7 +6,7 @@ export default class Preloader extends Phaser.Scene {
 		super('preloader')
 	}
 
-	preload {
+	preload() {
 		this.load.spritesheet('sokoban',
 			'textures/sokoban_tilesheet.png',
 				{
@@ -15,7 +15,7 @@ export default class Preloader extends Phaser.Scene {
 		)
 	}
 
-	create {
+	create() {
 		this.scene.start('game')
 	}
 
